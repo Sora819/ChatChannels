@@ -52,7 +52,7 @@ public class ChannelHandler {
         ConfigAdapter channelsData = ConfigHandler.channelsData;
 
         if (channelsData.get(channel) == null) {
-            throw new Exception(LocalizationHandler.getMessage("channel.already_active", true) + channel);
+            throw new Exception(LocalizationHandler.getMessage("channel.not_exist", true) + channel);
         }
 
         Set<String> playerList = new HashSet<>(channelsData.get(channel));

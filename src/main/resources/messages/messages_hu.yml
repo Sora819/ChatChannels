@@ -19,7 +19,7 @@ channel:
   left: "Elhagytad a következő csatornát: "
   active: "Új aktív csatorna beállítva: "
   already_created: "Ez a csatorna már létezik: "
-  already_deleted: "Ez a csatorna nem létezik: "
+  not_exist: "Ez a csatorna nem létezik: "
   already_joined: "Már csatlakoztál ehhez a csatornához: "
   already_left: "Nem vagy belépve ebbe a csatornába: "
   already_active: "Már beállítottad ezt a csatornát aktív csatornának: "

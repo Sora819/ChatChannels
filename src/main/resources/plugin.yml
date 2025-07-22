@@ -2,6 +2,7 @@ name: '${project.name}'
 version: '${project.version}'
 main: me.sora819.chatchannels.ChatChannelsPlugin
 api-version: '1.21'
+author: 'Sora819'
 
 commands:
   chatChannelsReload:

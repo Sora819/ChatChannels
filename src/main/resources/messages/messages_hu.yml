@@ -1,0 +1,26 @@
+error:
+  must_be_player: "Játékosnak kell lenned a parancs használatához"
+  invalid_argument_count: "Hibás argumentumszám"
+  command_load: "Hiba történt a következő parancs inicializálása közben: "
+  listener_load: "Hiba történt a következő eseményfigyelő inicializálása közben: "
+success:
+  command_run: "Parancs sikeresen futtatva"
+  command_load: "Parancs sikeresen betöltve: "
+  listener_load: "Eseményfigyelő sikeresen betöltve: "
+  language_set: "Nyelv sikeresen átállítva magyarra"
+  reload: "Konfiguráció újratöltve"
+plugin:
+  enabled: "Plugin betöltve"
+  disabled: "Plugin leállítva"
+channel:
+  created: "Új csatorna létrehozva: "
+  deleted: "Csatorna törölve: "
+  joined: "Csatlakoztál a következő csatornához: "
+  left: "Elhagytad a következő csatornát: "
+  active: "Új aktív csatorna beállítva: "
+  already_created: "Ez a csatorna már létezik: "
+  already_deleted: "Ez a csatorna nem létezik: "
+  already_joined: "Már csatlakoztál ehhez a csatornához: "
+  already_left: "Nem vagy belépve ebbe a csatornába: "
+  already_active: "Már beállítottad ezt a csatornát aktív csatornának: "
+  must_join: "Először csatlakoznod kell a csatornához"

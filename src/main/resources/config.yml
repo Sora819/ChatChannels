@@ -1,0 +1,4 @@
+language: en
+prefix: "&8[&6ChatChannels&8] &7"
+default_channel: Global
+chat_prefix_format: "&7[&a%s&7] &r"

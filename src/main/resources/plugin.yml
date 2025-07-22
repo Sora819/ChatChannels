@@ -1,0 +1,23 @@
+name: '${project.name}'
+version: '${project.version}'
+main: me.sora819.chatchannels.ChatChannelsPlugin
+api-version: '1.21'
+
+commands:
+  chatChannelsReload:
+    usage: '/<command>'
+  createChannel:
+    usage: '/<command> <channel>'
+    aliases: ['cchannel']
+  deleteChannel:
+    usage: '/<command> <channel>'
+    aliases: ['dchannel']
+  joinChannel:
+    usage: '/<command> <channel>'
+    aliases: ['jchannel', 'jc']
+  leaveChannel:
+    usage: '/<command> <channel>'
+    aliases: ['lchannel', 'lc']
+  activeChannel:
+    usage: '/<command> <channel>'
+    aliases: ['achannel', 'ac']

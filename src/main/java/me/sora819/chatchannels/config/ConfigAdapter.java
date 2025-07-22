@@ -1,0 +1,10 @@
+package me.sora819.chatchannels.config;
+
+public interface ConfigAdapter {
+    void reload();
+    void save();
+    <T> T get(String path);
+    <T> T get(String path, T default_value);
+    <T> void set(String path, T value);
+    boolean has(String path);
+}

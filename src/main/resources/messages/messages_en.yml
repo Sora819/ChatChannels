@@ -1,0 +1,26 @@
+error:
+  must_be_player: "Must be a player to use this command"
+  invalid_argument_count: "Invalid number of arguments"
+  command_load: "Error when initializing command: "
+  listener_load: "Error when initializing event listener: "
+success:
+  command_run: "Command successfully run"
+  command_load: "Command successfully loaded: "
+  listener_load: "Event listener successfully loaded: "
+  language_set: "Language successfully changed to english"
+  reload: "Configuration reloaded"
+plugin:
+  enabled: "Plugin enabled"
+  disabled: "Plugin disabled"
+channel:
+  created: "Created new chat channel: "
+  deleted: "Deleted chat channel: "
+  joined: "You joined the channel: "
+  left: "You left the channel: "
+  active: "New channel set as active: "
+  already_created: "The channel already exists: "
+  not_exist: "This channel doesn't exist: "
+  already_joined: "You already joined the channel: "
+  already_left: "You are not in the channel: "
+  already_active: "This channel is already set as active channel: "
+  must_join: "You have to join the channel first"

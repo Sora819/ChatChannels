@@ -2,6 +2,7 @@ package me.sora819.chatchannels.config;
 
 import me.sora819.chatchannels.ChatChannelsPlugin;
 import me.sora819.chatchannels.localization.LocalizationHandler;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Set;
 
 public class LocalizationConfig implements ConfigAdapter{
     private final File targetFile;
@@ -82,5 +84,19 @@ public class LocalizationConfig implements ConfigAdapter{
     @Override
     public boolean has(String path) {
         return config.contains(path);
+    }
+
+    public Set<String> getKeys() {
+        return config.getKeys(false);
+    }
+
+    public Set<String> getKeys(String path) {
+        ConfigurationSection section = config.getConfigurationSection(path);
+
+        if (section != null) {
+            return section.getKeys(false);
+        } else {
+            return Set.of();
+        }
     }
 }

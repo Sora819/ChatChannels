@@ -7,13 +7,13 @@ public class ConfigHandler {
     public static ConfigAdapter defaultMessagesConfig = new LocalizationConfig("en");
     public static ConfigAdapter messagesConfig = new LocalizationConfig(defaultConfig.get("language"));
     public static ConfigAdapter channelsData = new CustomConfig("data/channels.yml");
-    public static ConfigAdapter playerData = new CustomConfig("data/players.yml");
+    public static ConfigAdapter playersData = new CustomConfig("data/players.yml");
 
     public static void reloadConfigurations() {
         defaultConfig.reload();
         defaultMessagesConfig.reload();
         channelsData.reload();
-        playerData.reload();
+        playersData.reload();
 
         messagesConfig = new LocalizationConfig(defaultConfig.get("language"));
         LocalizationHandler.messagesConfig = messagesConfig;

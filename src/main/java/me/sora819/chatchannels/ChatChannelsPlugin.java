@@ -2,6 +2,7 @@ package me.sora819.chatchannels;
 
 import me.sora819.chatchannels.localization.LocalizationHandler;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.TabCompleter;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -47,8 +48,10 @@ public final class ChatChannelsPlugin extends JavaPlugin {
                     "Command");
 
                 CommandExecutor executor = (CommandExecutor) clazz.getDeclaredConstructor().newInstance();
+                TabCompleter tabCompleter = (TabCompleter) clazz.getDeclaredConstructor().newInstance();
 
                 getCommand(cmdName).setExecutor(executor);
+                getCommand(cmdName).setTabCompleter(tabCompleter);
                 getLogger().info(LocalizationHandler.getMessage("success.command_load") + cmdName);
 
             } catch (Exception e) {

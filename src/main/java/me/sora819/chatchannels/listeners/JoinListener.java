@@ -12,7 +12,7 @@ public class JoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         ConfigAdapter channelsData = ConfigHandler.channelsData;
-        ConfigAdapter playersData = ConfigHandler.playerData;
+        ConfigAdapter playersData = ConfigHandler.playersData;
         String defaultChannel = ConfigHandler.defaultConfig.get("default_channel");
 
         if (!channelsData.has(defaultChannel)) {

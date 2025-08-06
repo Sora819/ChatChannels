@@ -1,12 +1,14 @@
 package me.sora819.chatchannels.config;
 
 import me.sora819.chatchannels.ChatChannelsPlugin;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Set;
 
 public class DefaultConfig implements ConfigAdapter{
     public DefaultConfig() {
@@ -59,5 +61,19 @@ public class DefaultConfig implements ConfigAdapter{
     @Override
     public boolean has(String path) {
         return ChatChannelsPlugin.getInstance().getConfig().contains(path);
+    }
+
+    public Set<String> getKeys() {
+        return ChatChannelsPlugin.getInstance().getConfig().getKeys(false);
+    }
+
+    public Set<String> getKeys(String path) {
+        ConfigurationSection section = ChatChannelsPlugin.getInstance().getConfig().getConfigurationSection(path);
+
+        if (section != null) {
+            return section.getKeys(false);
+        } else {
+            return Set.of();
+        }
     }
 }

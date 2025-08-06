@@ -1,5 +1,7 @@
 package me.sora819.chatchannels.config;
 
+import java.util.Set;
+
 public interface ConfigAdapter {
     void reload();
     void save();
@@ -7,4 +9,5 @@ public interface ConfigAdapter {
     <T> T get(String path, T default_value);
     <T> void set(String path, T value);
     boolean has(String path);
+    Set<String> getKeys();
 }

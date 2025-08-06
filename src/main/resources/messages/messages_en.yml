@@ -24,3 +24,6 @@ channel:
   already_left: "You are not in the channel: "
   already_active: "This channel is already set as active channel: "
   must_join: "You have to join the channel first"
+chat:
+  no_active_channel: "You have no active channel set (likely an error happened), to be able to chat set a new active channel"
+  channel_not_joined: "You have yet to join this channel (likely an error happened), to be able to chat set a new active channel or join: "

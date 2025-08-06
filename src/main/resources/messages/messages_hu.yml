@@ -24,3 +24,6 @@ channel:
   already_left: "Nem vagy belépve ebbe a csatornába: "
   already_active: "Már beállítottad ezt a csatornát aktív csatornának: "
   must_join: "Először csatlakoznod kell a csatornához"
+chat:
+  no_active_channel: "Nincs aktív csatornád (valószínűleg hiba történt), ahhoz, hogy chat-elni tudj, állíts be egy új aktív csatornát"
+  channel_not_joined: "Még nem csatlakoztál ehhez a csatornához (valószínűleg hiba történt), ahhoz, hogy chat-elni tudj állíts be egy új csatornát vagy lépj be ebbe: "
